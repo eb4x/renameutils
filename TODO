@@ -1,0 +1,147 @@
+run valgrind to look for memory leaks
+
+from Nick Pope: qmv & imv should create directories as needed, so that you can rename into subdirs (like mkdir -p)
+
+from Nick Pope: coloring if the terminal supports it
+  [*] Using --command='svn mv'
+  [D] mammal/
+  [D] mammal/canine/
+  [M] mammal_canine_labrador.pdf -> mammal/canine/labrador.pdf
+  [-] unmodified_file.txt
+  [!] Invalid plan.
+legend:
+  [D] = created directory = yellow
+  [M] = moved file = green (for qmv)
+  [C] = copied file = green (for qcp)
+  [-] = an unmodified file = normal colour (could only show this with verbosity)
+  [*] = information = magenta
+  [!] = an error occurred = red
+
+add utf2iso?
+
+now/later? add --import/-I?
+test import command
+
+check license (--version/version_etc != README, GPLv2)
+
+---
+
+fix incomplete list in AUTHORS
+is use of mv(1) in qcmd completely problem free?
+fix all quoting (quote,quotearg) and some error messages
+
+Support -f and -i for imv. (If -f, then don't ask to overwrite and pass mv -f as well.
+If -i, then ask to overwrite and pass mv -i as well.)
+
+Merge ac_lib_readline.m4 from microdc
+
+(dual-column) Make option to control minimum accepted number of
+spaces between source and destination name.
+this will affect even when autowidth is enabled (in that case
+it would set the default number of spaces between names).
+
+(editing.c) If input fails, we're left in a bit unsure mode.
+what should we do?
+
+Verify multiple arguments with ls (after CHDIR changes)
+
+New option:
+-C, --confirm			ask if changes really are to be made
+(This is done before calling apply_plan)
+
+Maybe add `help' to format option help?
+
+Deal with more errors:
+wrong escape (\ ) sequences in format
+renaming dirs - rename no longer exists?
+permission in source directory
+permission to source file
+permission in destination directory
+permission to destination file
+...
+
+Write replacement wordexp to handle "", wildcards and ~.
+
+Short-hand aliases for all edit-format options:
+w for width, etc.
+
+Include `dpat' and `spat' similar utilities?
+Include `rename' (perl) clone written in C?
+
+Rename utility:
+-w wildcard/glob pattern: two arguments: *.bar *.baz
+-r POSIX regular expression: single: s/(.*)\.bar$/$1\.baz/
+-t translate characters like perl tr//: "tr/abc/ABC/"
+-l lowercase all characters
+-u uppercase all characters
+-U[WORD-DELIM] uppercase first characters, lowercase rest
+
+Substitution renaming in qmv like perl rename(1)?
+
+---
+
+history
+  Displays history in format
+   [I..]I YYYY-MM-DD HH:MM S f1 f2..
+   I=index, 1-
+   S=status: complete (C), partially complete (P), no changed (0)
+
+plan [I]
+  Show plan. Also change plan if I is specified.
+
+apply
+  Apply changes.
+
+revert
+  Revert changes.
+
+list FILE..
+  List files
+
+edit
+  Edit files in text editor.
+
+---
+
+State diagram
+
+        NoFiles Files   Edited  Partial Complete
+ls      *>*>>>>>*>*
+edit            *>>>>>>>*>*
+apply                   *>*>>>>>*>*>>>>>*>*
+revert                  *<*<<<<<*<*<<<<<*<*
+plan                    *       *       *
+
+Note that you can never go from Edited to Files/NoFiles!
+Once edited, a plan is created. This plan can be serialized.
+You'll have to edit again (and lose the plan). So there needs
+to be a way to deduce the original file set from the plan.
+Therefore the plan is separate from the change set.
+
+State data:
+  struct { char *oldname; char *newname; } edit[n]
+  struct { char *oldname; char *newname; } plan[m]
+  n <= m
+
+---
+
+Rename out-of-dirs is perfectly OK as long as destination file
+does not exist. Do not check this ahead of time?
+If not checked ahead of time, then we are assuming we are moving
+within one filesystems (due to time cost of moving back and
+forth).
+
+---
+
+unlist          list
+unedit          edit
+undo            apply
+
+        NoFiles Files   Edited  Partial Complete
+list    +>>>>>>>+
+unlist  +<<<<<<<+
+edit            >>>>>>>>+
+unedit          +<<<<<<<+
+apply                   +>>>>>>>+>>>>>>>+
+undo                    +<<<<<<<+<<<<<<<+
+status  +       +       +       +       +

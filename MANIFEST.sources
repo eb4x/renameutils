@@ -1,0 +1,271 @@
+# This file specifies the origin of each file in the source code file
+# archive of this project. It is best viewed with a tab width of 34 or
+# greater. Note that files marked as "generated" have been generated from
+# other files in to this project, files which themselves may have come
+# from another project (if marked so in this document). Files marked with
+# "this" come from this project.
+#
+ABOUT-NLS	GNU gettext
+AUTHORS	this
+COPYING	GNU Automake
+ChangeLog	this
+INSTALL	GNU Automake
+MANIFEST.sources	this
+Makefile.am	this
+Makefile.in	generated GNU Automake
+NEWS	this
+README	this
+TODO	this
+aclocal.m4	generated GNU Automake
+config.h.in	generated GNU Autoconf
+configure	generated GNU Autoconf
+configure.ac	this
+renameutils.spec.in	this
+build-aux/config.guess	GNU Automake
+build-aux/config.rpath	Gnulib
+build-aux/config.sub	GNU Automake
+build-aux/depcomp	GNU Automake
+build-aux/install-sh	GNU Automake
+build-aux/link-warning.h	Gnulib
+build-aux/missing	GNU Automake
+build-aux/mkinstalldirs	Gnulib
+debian/changelog	this
+debian/control	this
+debian/copyright	this
+debian/rules	this
+lib/Makefile.am	this
+lib/Makefile.in	generated GNU Automake
+lib/alloca.c	Gnulib
+lib/alloca.in.h	Gnulib
+lib/asnprintf.c	Gnulib
+lib/asprintf.c	Gnulib
+lib/basename.c	Gnulib
+lib/config.charset	Gnulib
+lib/dirname.c	Gnulib
+lib/dirname.h	Gnulib
+lib/dup2.c	Gnulib
+lib/error.c	Gnulib
+lib/error.h	Gnulib
+lib/exitfail.c	Gnulib
+lib/exitfail.h	Gnulib
+lib/fcntl.in.h	Gnulib
+lib/float+.h	Gnulib
+lib/float.in.h	Gnulib
+lib/free.c	Gnulib
+lib/getdelim.c	Gnulib
+lib/getline.c	Gnulib
+lib/getopt.c	Gnulib
+lib/getopt.in.h	Gnulib
+lib/getopt1.c	Gnulib
+lib/getopt_int.h	Gnulib
+lib/gettext.h	Gnulib
+lib/gettimeofday.c	Gnulib
+lib/intprops.h	Gnulib
+lib/localcharset.c	Gnulib
+lib/localcharset.h	Gnulib
+lib/locale.in.h	Gnulib
+lib/lstat.c	Gnulib
+lib/lstat.h	Gnulib
+lib/malloc.c	Gnulib
+lib/memcpy.c	Gnulib
+lib/memmove.c	Gnulib
+lib/memset.c	Gnulib
+lib/minmax.h	Gnulib
+lib/printf-args.c	Gnulib
+lib/printf-args.h	Gnulib
+lib/printf-parse.c	Gnulib
+lib/printf-parse.h	Gnulib
+lib/progname.c	Gnulib
+lib/progname.h	Gnulib
+lib/quote.c	Gnulib
+lib/quote.h	Gnulib
+lib/quotearg.c	Gnulib
+lib/quotearg.h	Gnulib
+lib/realloc.c	Gnulib
+lib/ref-add.sin	Gnulib
+lib/ref-del.sin	Gnulib
+lib/regcomp.c	Gnulib
+lib/regex.c	Gnulib
+lib/regex.h	Gnulib
+lib/regex_internal.c	Gnulib
+lib/regex_internal.h	Gnulib
+lib/regexec.c	Gnulib
+lib/rpmatch.c	Gnulib
+lib/signal.in.h	Gnulib
+lib/size_max.h	Gnulib
+lib/stdbool.in.h	Gnulib
+lib/stdint.in.h	Gnulib
+lib/stdio.in.h	Gnulib
+lib/stdlib.in.h	Gnulib
+lib/strcasecmp.c	Gnulib
+lib/strdup.c	Gnulib
+lib/strerror.c	Gnulib
+lib/string.in.h	Gnulib
+lib/strings.in.h	Gnulib
+lib/stripslash.c	Gnulib
+lib/strncasecmp.c	Gnulib
+lib/strndup.c	Gnulib
+lib/strnlen.c	Gnulib
+lib/sys_stat.in.h	Gnulib
+lib/sys_time.in.h	Gnulib
+lib/unistd.in.h	Gnulib
+lib/vasnprintf.c	Gnulib
+lib/vasnprintf.h	Gnulib
+lib/vasprintf.c	Gnulib
+lib/version-etc.c	Gnulib
+lib/version-etc.h	Gnulib
+lib/wchar.in.h	Gnulib
+lib/wctype.in.h	Gnulib
+lib/xalloc-die.c	Gnulib
+lib/xalloc.h	Gnulib
+lib/xasprintf.c	Gnulib
+lib/xmalloc.c	Gnulib
+lib/xsize.h	Gnulib
+lib/xstrndup.c	Gnulib
+lib/xstrndup.h	Gnulib
+lib/xvasprintf.c	Gnulib
+lib/xvasprintf.h	Gnulib
+lib/yesno.c	Gnulib
+lib/yesno.h	Gnulib
+m4/alloca.m4	Gnulib
+m4/codeset.m4	Gnulib
+m4/dirname.m4	Gnulib
+m4/dos.m4	Gnulib
+m4/double-slash-root.m4	Gnulib
+m4/dup2.m4	Gnulib
+m4/eoverflow.m4	Gnulib
+m4/error.m4	Gnulib
+m4/exitfail.m4	Gnulib
+m4/extensions.m4	Gnulib
+m4/fcntl_h.m4	Gnulib
+m4/float_h.m4	Gnulib
+m4/free.m4	Gnulib
+m4/getdelim.m4	Gnulib
+m4/getline.m4	Gnulib
+m4/getopt.m4	Gnulib
+m4/gettext.m4	Gnulib
+m4/gettimeofday.m4	Gnulib
+m4/glibc21.m4	Gnulib
+m4/gnulib-common.m4	Gnulib
+m4/gnulib-comp.m4	generated Gnulib
+m4/iconv.m4	Gnulib
+m4/include_next.m4	Gnulib
+m4/inline.m4	Gnulib
+m4/intlmacosx.m4	Gnulib
+m4/intmax_t.m4	Gnulib
+m4/inttypes_h.m4	Gnulib
+m4/lib-ld.m4	Gnulib
+m4/lib-link.m4	Gnulib
+m4/lib-prefix.m4	Gnulib
+m4/localcharset.m4	Gnulib
+m4/locale_h.m4	Gnulib
+m4/longlong.m4	Gnulib
+m4/lstat.m4	Gnulib
+m4/malloc.m4	Gnulib
+m4/mbrtowc.m4	Gnulib
+m4/mbstate_t.m4	Gnulib
+m4/memcpy.m4	Gnulib
+m4/memmove.m4	Gnulib
+m4/memset.m4	Gnulib
+m4/minmax.m4	Gnulib
+m4/nls.m4	Gnulib
+m4/ol_lib_readline.m4	this
+m4/onceonly_2_57.m4	Gnulib
+m4/po.m4	Gnulib
+m4/progtest.m4	Gnulib
+m4/quote.m4	Gnulib
+m4/quotearg.m4	Gnulib
+m4/realloc.m4	Gnulib
+m4/regex.m4	Gnulib
+m4/rpmatch.m4	Gnulib
+m4/signal_h.m4	Gnulib
+m4/size_max.m4	Gnulib
+m4/ssize_t.m4	Gnulib
+m4/stdarg.m4	Gnulib
+m4/stdbool.m4	Gnulib
+m4/stdint.m4	Gnulib
+m4/stdint_h.m4	Gnulib
+m4/stdio_h.m4	Gnulib
+m4/stdlib_h.m4	Gnulib
+m4/strcase.m4	Gnulib
+m4/strdup.m4	Gnulib
+m4/strerror.m4	Gnulib
+m4/string_h.m4	Gnulib
+m4/strings_h.m4	Gnulib
+m4/strndup.m4	Gnulib
+m4/strnlen.m4	Gnulib
+m4/sys_stat_h.m4	Gnulib
+m4/sys_time_h.m4	Gnulib
+m4/unistd_h.m4	Gnulib
+m4/vasnprintf.m4	Gnulib
+m4/vasprintf.m4	Gnulib
+m4/wchar.m4	Gnulib
+m4/wchar_t.m4	Gnulib
+m4/wctype.m4	Gnulib
+m4/wint_t.m4	Gnulib
+m4/xalloc.m4	Gnulib
+m4/xsize.m4	Gnulib
+m4/xstrndup.m4	Gnulib
+m4/xvasprintf.m4	Gnulib
+m4/yesno.m4	Gnulib
+po/LINGUAS	this
+po/Makefile.in.in	GNU gettext
+po/Makevars	this
+po/POTFILES.in	this
+po/Rules-quot	GNU gettext
+po/boldquot.sed	GNU gettext
+po/en@boldquot.header	GNU gettext
+po/en@quot.header	GNU gettext
+po/fr.gmo	generated GNU gettext
+po/fr.po	this
+po/insert-header.sin	GNU gettext
+po/quot.sed	GNU gettext
+po/remove-potcdate.sin	GNU gettext
+po/renameutils.pot	this
+po/stamp-po	generated GNU gettext
+po/sv.gmo	generated GNU gettext
+po/sv.po	this
+src/Makefile.am	this
+src/Makefile.in	generated GNU Automake
+src/apply.c	this
+src/deurlname.1	this
+src/deurlname.c	this
+src/display.c	this
+src/edit.c	this
+src/icmd.1	this
+src/icmd.c	this
+src/interactive.c	this
+src/list.c	this
+src/plan.c	this
+src/qcmd.1	this
+src/qcmd.c	this
+src/qcmd.h	this
+src/quote.c	this
+src/variables.c	this
+src/common/Makefile.am	this
+src/common/Makefile.in	generated GNU Automake
+src/common/common.h	this
+src/common/comparison.h	this
+src/common/error.c	this
+src/common/error.h	this
+src/common/hmap.c	this
+src/common/hmap.h	this
+src/common/intutil.c	this
+src/common/intutil.h	this
+src/common/io-utils.c	this
+src/common/io-utils.h	this
+src/common/llist.c	this
+src/common/llist.h	this
+src/common/strbuf.c	this
+src/common/strbuf.h	this
+src/common/string-utils.c	this
+src/common/string-utils.h	this
+src/common/tab-utils.c	this
+src/common/tab-utils.h	this
+src/common/tmap.c	this
+src/common/tmap.h	this
+src/editformats/Makefile.am	this
+src/editformats/Makefile.in	generated GNU Automake
+src/editformats/destination-only.c	this
+src/editformats/dual-column.c	this
+src/editformats/single-column.c	this
